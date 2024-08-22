@@ -16,7 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
 
     <title>Saylani Welfare</title>
@@ -72,12 +77,12 @@
           <div class="sitemenu">
             <ul>
               <li><a href="./index.html">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Media</a></li>
-              <li><a href="">Contactus</a></li>
-              <li><a href="">Bank Details</a></li>
-              <li><a href="">Other Websites</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="#">Contactus</a></li>
+              <li><a href="#">Bank Details</a></li>
+              <li><a href="#">Other Websites</a></li>
             </ul>
           </div>
           <div class="navbtn">
@@ -88,18 +93,19 @@
       </nav>
     </header>
     <div class="root">
-      <section>
+      <section class="row">
         <div class="slider">
-          <div class="slidertext">
-            <div class="sliderh1">
-              <h1 class="fs-1">
-                <span>
-                  Welcome To
-                  <br />
-                  <span class="colortextgreen">Saylani</span>
-                  Welfare
-                </span>
-              </h1>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="slidertext">
+              <div class="sliderh1">
+                <h1 class="fs-1">
+                  <span>
+                    Welcome To
+                    <br />
+                    <span class="colortextgreen">Saylani</span>
+                    Welfare
+                  </span>
+                </h1>
               <h2 class="fs-1">
                 <span>
                   The largest NGO offering
@@ -114,56 +120,70 @@
                 families in more than 63 areas of day to day lives.
               </p>
               <div class="sliderlink">
-                <a href="#">Explore More</a>
-                <i class="fa-solid fa-arrow-right"></i>
+                <button>
+                  <a href="#">Explore More</a>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
           <div class="sliderimage">
             <img src="./Assets/Slider Image.png" alt="sliderimage" />
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="donationbox">
-          <div class="donationbox-input">
-            <span class="input">
-              <span class="general">General</span>
-              <input type="number" id="dontaion" />
-              <span class="rupees">Rs</span>
-            </span>
-          </div>
-          <div class="donationbtn">
-            <div class="bloodbank">
-              <span class="donationboxbtn">
-                <button>Blood Bank/Thalassemia Treatment</button>
-              </span>
-            </div>
-
-            <div class="family">
-              <span class="donationboxbtn">
-                <button>Family Kifalat</button>
-              </span>
-            </div>
-
-            <div class="medical">
-              <span class="donationboxbtn">
-                <button>Medical</button>
-              </span>
-            </div>
-
-            <div class="food">
-              <span class="donationboxbtn">
-                <button>Food</button>
-              </span>
+      <section class="container-fluid">
+        <div class="donationbox row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+          <div class="donationbox-inputgroup">
+              <div class="donationboxinput">
+                <span class="input">
+                  <span class="general">General</span>
+                  <input type="number" id="donation" min="0" maxlength="8" />
+                  <span class="rupees">Rs</span>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="donatebtn">
-            <button>Quick Donate</button>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-9">            
+            <div class="donationbtn">
+                <div class="bloodbank">
+                  <span class="donationboxbtn">
+                    <button>Blood Bank/Thalassemia Treatment</button>
+                  </span>
+                </div>
+                
+                <div class="family">
+                  <span class="donationboxbtn">
+                    <button>Family Kifalat</button>
+                  </span>
+                </div>
+                
+                <div class="medical">
+                  <span class="donationboxbtn">
+                    <button>Medical</button>
+                  </span>
+                </div>
+                
+                <div class="food">
+                  <span class="donationboxbtn">
+                    <button>Food</button>
+                  </span>
+                </div>
+                <div style="justify-content: flex-end;" class="donationboxbtn donatebtn">
+                  <button>Quick Donate</button>
+                </div>
+              </div>
+  
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      
+
+
       <section class="banner">
         <figure>
           <img src="./Assets/education banner.jpg" alt="wducationbanner" />
@@ -174,405 +194,702 @@
         <div class="heading">
           <h1>What Are We Doing?</h1>
         </div>
-        <div class="servicerow">
-          <div class="serviceboxgroup">
-            <div class="service_icon">
-              <img src="./Assets/Welfare_icon.png" alt="Welfare" />
-            </div>
-            <div class="service_text">
-              <h2>Welfare</h2>
-            </div>
-          </div>
-          <div class="serviceboxgroup">
-            <div class="service_icon">
-              <img src="./Assets/Medical_icon.png" alt="Medical" />
-            </div>
-            <div class="service_text">
-              <h2>Medical</h2>
+        <div class="servicerow row">
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+            <div class="serviceboxgroup">
+              <div class="service_icon">
+                <img src="./Assets/Welfare_icon.png" alt="Welfare" />
+              </div>
+              <div class="service_text">
+                <h2>Welfare</h2>
+              </div>
             </div>
           </div>
-          <div class="serviceboxgroup">
-            <div class="service_icon">
-              <img src="./Assets/Online Sadqa_icon.png" alt="Online Charity" />
-            </div>
-            <div class="service_text">
-              <h2>Online Sadqah</h2>
-            </div>
-          </div>
-          <div class="serviceboxgroup">
-            <div class="service_icon">
-              <img src="./Assets/Clean Water_icon.png" alt="Clean Water" />
-            </div>
-            <div class="service_text">
-              <h2>Clean Water</h2>
+          
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+            <div class="serviceboxgroup">
+              <div class="service_icon">
+                <img src="./Assets/Medical_icon.png" alt="Medical" />
+              </div>
+              <div class="service_text">
+                <h2>Medical</h2>
+              </div>
             </div>
           </div>
-          <div class="serviceboxgroup">
-            <div class="service_icon">
-              <img src="./Assets/Education_icon.png" alt="Education" />
-            </div>
-            <div class="service_text">
-              <h2>Education</h2>
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+            <div class="serviceboxgroup">
+              <div class="service_icon">
+                <img src="./Assets/Online Sadqa_icon.png" alt="Online Charity" />
+              </div>
+              <div class="service_text">
+                <h2>Online Sadqah</h2>
+              </div>
             </div>
           </div>
-          <div class="serviceboxgroup">
-            <div class="service_icon">
-              <img src="./Assets/Food_icon.png" alt="Food" />
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+            <div class="serviceboxgroup">
+              <div class="service_icon">
+                <img src="./Assets/Clean Water_icon.png" alt="Clean Water" />
+              </div>
+              <div class="service_text">
+                <h2>Clean Water</h2>
+              </div>
             </div>
-            <div class="service_text">
-              <h2>Food</h2>
+          </div>
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+            <div class="serviceboxgroup">
+              <div class="service_icon">
+                <img src="./Assets/Education_icon.png" alt="Education" />
+              </div>
+              <div class="service_text">
+                <h2>Education</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-2 col-lg-2">
+            <div class="serviceboxgroup">
+              <div class="service_icon">
+                <img src="./Assets/Food_icon.png" alt="Food" />
+              </div>
+              <div class="service_text">
+                <h2>Food</h2>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="fundraising">
-        <div class="fundraisinggroup">
-          <img src="./Assets/ITstudents.jpg" alt="IT Fund Raise" />
-          <div class="fundraisesolution">
-            <h2>Sponsor IT Solution</h2>
-            <button><span>Donate</span></button>
-          </div>
-        </div>
-        <div class="fundraisinggroup">
-          <img src="./Assets/Food.jpg" alt="Hunger Fund Raise" />
-          <div class="fundraisesolution">
-            <h2>Daily Food</h2>
-            <button><span>Donate</span></button>
-          </div>
-        </div>
-        <div class="fundraisinggroup">
-          <img
-            src="./Assets/Vocationaltraining.jpg"
-            alt="VocationalTraining Fund Raise"
-          />
-          <div class="fundraisesolution">
-            <h2>Sponsor Vocational Student</h2>
-            <button><span>Donate</span></button>
-          </div>
-        </div>
-      </section>
-      <section class="otherprojects">
-        <div class="otherprojectsrow">
-          <div class="otherprojectimage">
-            <img src="./Assets/otherproject.jpg" alt="otherproject" />
-            <div class="upcomingtextbox">
-              <h3>
-                Saylani serve almost 300,000 underprivileged on daily basis
-              </h3>
-            </div>
-            <div class="transparentbox"></div>
-            <div class="transparentbox2"></div>
-          </div>
-          <div class="otherprojecttext">
-            <div>
-              <span class="otherprojectheading"><h1>Other Projects</h1></span>
-            </div>
-            <div class="upcomingprojectitems">
-              <div>
-                <div>
-                  <img src="./Assets/Hepatitis.png" alt="Hepatitis" />
-                </div>
-              </div>
-              <div class="upcommingtext">
-                <h5 class="typeheading">Hepatitis</h5>
-                <span class="typenormaltext">Saylani Welfare has also set up a clinic for the besttreatment of hepatitis patients where hepatitis patients are being treated</span>
-              </div>
-            </div>
-            <div class="upcomingprojectitems">
-              <div>
-                <div>
-                  <img
-                    src="./Assets/Housibng Society.png"
-                    alt="Housing Society"
-                  />
-                </div>
-              </div>
-              <div class="upcommingtext">
-                <h5 class="typeheading">Housing Society</h5>
-                <span class="typenormaltext"
-                  >Saylani Welfare is also providing its own home facility for
-                  the homeless people. So far, thousands of houses and flats
-                  have been constructed and given in easy installments</span
-                >
-              </div>
-            </div>
-            <div class="upcomingprojectitems">
-              <div>
-                <div>
-                  <img src="./Assets/IT Litracy.png" alt="IT Literacy" />
-                </div>
-              </div>
-              <div class="upcommingtext">
-                <h5 class="typeheading">IT Literacy</h5>
-                <span class="typenormaltext"
-                  >We are committed to developing more than 1 million software
-                  developers, which will add about 100 billion annually to
-                  Pakistan's economy and help ease the debt burden on
-                  Pakistan</span
-                >
-              </div>
-            </div>
-            <div class="upcomingprojectitems">
-              <div>
-                <div>
-                  <img src="./Assets/Tharparker.png" alt="Tharparker" />
-                </div>
-              </div>
-              <div class="upcommingtext">
-                <h5 class="typeheading">Tharparker</h5>
-                <span class="typenormaltext"
-                  >In Tharparkar, Saylani has set up several schools and ro
-                  plants, dug wells and brought the children there to Karachi
-                  and taught them modern technology</span
-                >
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-4 col-md-4">
+            <div class="fundraisinggroup">
+              <img src="./Assets/ITstudents.jpg" alt="IT Fund Raise" />
+              <div class="fundraisesolution">
+                <h2>Sponsor IT Solution</h2>
+                <button><span>Donate</span></button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="servicecounter">
-        <div class="servicerow">
-          <div class="servicecountboxgroup">
-            <div class="servicebox">
-              <figure>
-                <img src="./Assets/Food_icon.png" alt="Food_icon" />
-              </figure>
-              <div class="content">
-                <h4>300000</h4>
-                <p>Food</p>
-                <p>(Daily)</p>
+          <div class="col-12 col-sm-12 col-lg-4 col-md-4">
+            <div class="fundraisinggroup">
+              <img src="./Assets/Food.jpg" alt="Hunger Fund Raise" />
+              <div class="fundraisesolution">
+                <h2>Daily Food</h2>
+                <button><span>Donate</span></button>
               </div>
             </div>
           </div>
-          <div class="servicecountboxgroup">
-            <div class="servicebox">
-              <figure>
-                <img src="./Assets/serviceAdoption.png" alt="Family_Adoption_icon"/>
-              </figure>
-              <div class="content">
-                <h4>20000</h4>
-                <p>Family Adoption</p>
-                <p>(Monthly)</p>
-              </div>
-            </div>
-          </div>
-          <div class="servicecountboxgroup">
-            <div class="servicebox">
-              <figure>
-                <img src="./Assets/serviceeducation.png" alt="Education_icon" />
-              </figure>
-              <div class="content">
-                <h4>25000</h4>
-                <p>Education</p>
-                <p>(Monthly)</p>
-              </div>
-            </div>
-          </div>
-          <div class="servicecountboxgroup">
-            <div class="servicebox">
-              <figure>
-                <img src="./Assets/servicemedical.png" alt="Medical_icon" />
-              </figure>
-              <div class="content">
-                <h4>125000</h4>
-                <p>Medical</p>
-                <p>(Monthly)</p>
+          <div class="col-12 col-sm-12 col-lg-4 col-md-4">
+            <div class="fundraisinggroup">
+              <img
+              src="./Assets/Vocationaltraining.jpg"
+              alt="VocationalTraining Fund Raise"
+              />
+              <div class="fundraisesolution">
+                <h2>Sponsor Vocational Student</h2>
+                <button><span>Donate</span></button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="Mediaupdates">
-        <div class="container-fluid text-center my-5 w-100">
-          <h1 class="mx-auto mb-5 fs-1" style="width: 500px;">Media Updates</h1>
+      <section class="otherprojects">
+        <div class="otherprojectsrow row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="otherprojectimage">
+              <img src="./Assets/otherproject.jpg" alt="otherproject" />
+              <div class="upcomingtextbox">
+                <h1>
+                  Saylani serve almost 300,000 underprivileged on daily basis
+                </h1>
+              </div>
+              <div class="transparentbox"></div>
+              <div class="transparentbox2"></div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="otherprojecttext">
+              <div>
+                <span class="otherprojectheading fs-1"
+                ><h1>Other Projects</h1></span
+                >
+              </div>
+              <div class="upcomingprojectsmaindiv">
+                <div class="upcomingprojectitems">
+                  <div>
+                    <div>
+                      <img src="./Assets/Hepatitis.png" alt="Hepatitis" />
+                    </div>
+                  </div>
+                  <div class="upcommingtext">
+                    <h5 class="typeheading">Hepatitis</h5>
+                    <span class="typenormaltext"
+                      >Saylani Welfare has also set up a clinic for the
+                      besttreatment of hepatitis patients where hepatitis
+                      patients are being treated</span
+                      >
+                    </div>
+                  </div>
+                <div class="upcomingprojectitems">
+                  <div>
+                    <div>
+                      <img
+                        src="./Assets/Housibng Society.png"
+                        alt="Housing Society"
+                      />
+                    </div>
+                  </div>
+                  <div class="upcommingtext">
+                    <h5 class="typeheading">Housing Society</h5>
+                    <span class="typenormaltext"
+                    >Saylani Welfare is also providing its own home facility
+                    for the homeless people. So far, thousands of houses and
+                    flats have been constructed and given in easy
+                    installments</span
+                    >
+                  </div>
+                </div>
+                <div class="upcomingprojectitems">
+                  <div>
+                    <div>
+                      <img src="./Assets/IT Litracy.png" alt="IT Literacy" />
+                    </div>
+                  </div>
+                  <div class="upcommingtext">
+                    <h5 class="typeheading">IT Literacy</h5>
+                    <span class="typenormaltext"
+                    >We are committed to developing more than 1 million
+                    software developers, which will add about 100 billion
+                    annually to Pakistan's economy and help ease the debt
+                    burden on Pakistan</span
+                    >
+                  </div>
+                </div>
+                <div class="upcomingprojectitems">
+                  <div>
+                    <div>
+                      <img src="./Assets/Tharparker.png" alt="Tharparker" />
+                    </div>
+                  </div>
+                  <div class="upcommingtext">
+                    <h5 class="typeheading">Tharparker</h5>
+                    <span class="typenormaltext"
+                    >In Tharparkar, Saylani has set up several schools and ro
+                    plants, dug wells and brought the children there to
+                      Karachi and taught them modern technology</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="servicecounter">
+        <div class="servicecountboxgroup">
+          <div class="servicebox">
+            <figure>
+              <img src="./Assets/Food_icon.png" alt="Food_icon" />
+            </figure>
+            <div class="content">
+              <h4>300000</h4>
+              <p>Food</p>
+              <p>(Daily)</p>
+            </div>
+          </div>
+        </div>
+        <div class="servicecountboxgroup">
+          <div class="servicebox">
+            <figure>
+              <img
+              src="./Assets/serviceAdoption.png"
+              alt="Family_Adoption_icon"
+              />
+            </figure>
+            <div class="content">
+              <h4>20000</h4>
+              <p>Family Adoption</p>
+              <p>(Monthly)</p>
+            </div>
+          </div>
+        </div>
+        <div class="servicecountboxgroup">
+          <div class="servicebox">
+            <figure>
+              <img src="./Assets/serviceeducation.png" alt="Education_icon" />
+            </figure>
+            <div class="content">
+              <h4>25000</h4>
+              <p>Education</p>
+              <p>(Monthly)</p>
+            </div>
+          </div>
+        </div>
+        <div class="servicecountboxgroup">
+          <div class="servicebox">
+            <figure>
+              <img src="./Assets/servicemedical.png" alt="Medical_icon" />
+            </figure>
+            <div class="content">
+              <h4>125000</h4>
+              <p>Medical</p>
+              <p>(Monthly)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Mediaupdates d-flex">
+        <div class="container-fluid text-center">
+          <h1 class="mx-auto mb-5 fs-1">Media Updates</h1>
           <div class="row">
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail1.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
+                  <img
+                  src="./Assets/Youtubethumbnail1.jpg"
+                  class="card-img-top mediaimg"
+                  alt="Youtube thumbnail"
+                  />
+                  <img
+                  src="./Assets/Youtube Play Button.png"
+                  class="mediabtn"
+                  alt=""
+                  />
                 </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail2.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
+                  <img
+                  src="./Assets/Youtubethumbnail2.jpg"
+                  class="card-img-top mediaimg"
+                  alt="Youtube thumbnail"
+                  />
+                  <img
+                  src="./Assets/Youtube Play Button.png"
+                  class="mediabtn"
+                  alt=""
+                  />
                 </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail3.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
+                  <img
+                  src="./Assets/Youtubethumbnail3.jpg"
+                  class="card-img-top mediaimg"
+                  alt="Youtube thumbnail"
+                  />
+                  <img
+                  src="./Assets/Youtube Play Button.png"
+                  class="mediabtn"
+                  alt=""
+                  />
                 </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail4.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
+                  <img
+                  src="./Assets/Youtubethumbnail4.jpg"
+                  class="card-img-top mediaimg"
+                  alt="Youtube thumbnail"
+                  />
+                  <img
+                  src="./Assets/Youtube Play Button.png"
+                  class="mediabtn"
+                  alt=""
+                  />
                 </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
             </div>
-            
           </div>
-
 
           <div class="row mt-5">
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail5.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
+                  <img
+                  src="./Assets/Youtubethumbnail5.jpg"
+                  class="card-img-top mediaimg"
+                  alt="Youtube thumbnail"
+                  />
+                  <img
+                    src="./Assets/Youtube Play Button.png"
+                    class="mediabtn"
+                    alt=""
+                  />
                 </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail6.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
-                </div>
+                  <img
+                  src="./Assets/Youtubethumbnail6.jpg"
+                    class="card-img-top mediaimg"
+                    alt="Youtube thumbnail"
+                    />
+                    <img
+                    src="./Assets/Youtube Play Button.png"
+                    class="mediabtn"
+                    alt=""
+                    />
+                  </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
+              <div class="card mt-3 noborder" style="width: 100%">
                 <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail7.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
+                  <img
+                  src="./Assets/Youtubethumbnail7.jpg"
+                  class="card-img-top mediaimg"
+                  alt="Youtube thumbnail"
+                  />
+                </div>
+                  <img
+                    src="./Assets/Youtube Play Button.png"
+                    class="mediabtn"
+                    alt=""
+                  />
                 </div>
                 <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
+                  <h1 class="fs-2">
+                    Join the A&IT Course and Secure Your Future with Top Jobs |
+                    Maulana Bashir Farooq Qadri | SBIL
+                  </h1>
                   <p class="card-text">#organisation</p>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
-                <div class="ytmedia">
-                    <img src="./Assets/Youtubethumbnail8.jpg" class="card-img-top mediaimg" alt="Youtube thumbnail">
-                    <img src="./Assets/Youtube Play Button.png" class="mediabtn" alt="">
-                </div>
-                <div class="card-body text-start">
-                  <h1 class="fs-2">Join the A&IT Course and Secure Your Future with Top Jobs | Maulana Bashir Farooq Qadri | SBIL</h1>
-                  <p class="card-text">#organisation</p>
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="card mt-3 noborder" style="width: 100%">
+                  <div class="ytmedia">
+                    <img
+                      src="./Assets/Youtubethumbnail8.jpg"
+                      class="card-img-top mediaimg"
+                      alt="Youtube thumbnail"
+                    />
+                    <img
+                      src="./Assets/Youtube Play Button.png"
+                      class="mediabtn"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body text-start">
+                    <h1 class="fs-2">
+                      Join the A&IT Course and Secure Your Future with Top Jobs |
+                      Maulana Bashir Farooq Qadri | SBIL
+                    </h1>
+                    <p class="card-text">#organisation</p>
+                  </div>
                 </div>
               </div>
+
             </div>
-            
+
           </div>
-        </div>
+        </section>
         
-      </section>
+        <section class="News">
+          <div class="container-fluid text-center my-5 w-100">
+            <h1 class="mx-auto mb-5 fs-1">News</h1>
+            <div class="row">
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="card mt-3 noborder" style="width: 100%">
+                  <img
+                  src="./Assets/Blog4.jpg"
+                  class="card-img-top News"
+                  alt="Youtube thumbnail"
+                  />
+                  <div class="card-body text-start background">
+                    <button class="news-btn btn btn-primary">
+                      Mon Aug 12 2024
+                    </button>
+                    <h1 class="fs-3">
+                      Adnan Luawei (Prominent IT Leader & CEO Folio3) at...
+                    </h1>
+                    <button class="btn btn-primary new-blogforward-btn">
+                    <i class="fa fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      <section class="News">
-        <div class="container-fluid text-center my-5 w-100">
-          <h1 class="mx-auto mb-5 fs-1" style="width: 500px;">News</h1>
-          <div class="row">
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
-                    <img src="./Assets/Blog4.jpg" class="card-img-top News" alt="Youtube thumbnail">
+              <div class="card mt-3 noborder" style="width: 100%">
+                <img
+                  src="./Assets/Blog1.jpg"
+                  class="card-img-top News"
+                  alt="Youtube thumbnail"
+                  />
+                  <div class="card-body text-start background">
+                    <button class="news-btn btn btn-primary">
+                      Sun Aug 04 2024
+                    </button>
+                    <h1 class="fs-3">
+                      Saylani Tree Plantation Drive with CEO Muhammad Ma...
+                    </h1>
+                    <button class="btn btn-primary new-blogforward-btn">
+                      <i class="fa fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="card mt-3 noborder" style="width: 100%">
+                  <img
+                  src="./Assets/Blog2.jpg"
+                class="card-img-top News"
+                alt="Youtube thumbnail"
+                />
                 <div class="card-body text-start background">
-                  <button class="news-btn btn btn-primary">Mon Aug 12 2024</button>
-                  <h1 class="fs-3">Adnan Luawei (Prominent IT Leader & CEO Folio3) at...</h1>
-                  <button class="btn btn-primary new-blogforward-btn"><i class="fa fa-arrow-right"></i></button>
+                  <button class="news-btn btn btn-primary">
+                    Thu Aug 1 2024
+                  </button>
+                  <h1 class="fs-3">
+                    Saylani Tree Plantation Drive with Chairman Maulan...
+                  </h1>
+                  <button class="btn btn-primary new-blogforward-btn">
+                    <i class="fa fa-arrow-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
             
             <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
-                    <img src="./Assets/Blog1.jpg" class="card-img-top News" alt="Youtube thumbnail">
+              <div class="card mt-3 noborder" style="width: 100%">
+                <img
+                src="./Assets/Blog3.jpg"
+                class="card-img-top News"
+                alt="Youtube thumbnail"
+                />
                 <div class="card-body text-start background">
-                  <button class="news-btn btn btn-primary">Sun Aug 04 2024</button>
-                  <h1 class="fs-3">Saylani Tree Plantation Drive with CEO Muhammad Ma...</h1>
-                  <button class="btn btn-primary new-blogforward-btn"><i class="fa fa-arrow-right"></i></button>
+                  <button class="news-btn btn btn-primary">
+                    Thu May 30 2024
+                  </button>
+                  <h1 class="fs-3">
+                    Mazik Global Pakistan joins Saylani Welfare Intern...
+                  </h1>
+                  <button class="btn btn-primary new-blogforward-btn">
+                    <i class="fa fa-arrow-right"></i>
+                  </button>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
-                    <img src="./Assets/Blog2.jpg" class="card-img-top News" alt="Youtube thumbnail">
-                <div class="card-body text-start background">
-                  <button class="news-btn btn btn-primary">Thu Aug 1 2024</button>
-                  <h1 class="fs-3">Saylani Tree Plantation Drive with Chairman Maulan...</h1>
-                  <button class="btn btn-primary new-blogforward-btn"><i class="fa fa-arrow-right"></i></button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-lg-3">
-              <div class="card mt-3 noborder" style="width: 100%;">
-                    <img src="./Assets/Blog3.jpg" class="card-img-top News" alt="Youtube thumbnail">
-                <div class="card-body text-start background">
-                  <button class="news-btn btn btn-primary">Thu May 30 2024</button>
-                  <h1 class="fs-3">Mazik Global Pakistan joins Saylani Welfare Intern...</h1>
-                  <button class="btn btn-primary new-blogforward-btn"><i class="fa fa-arrow-right"></i></button>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
-
-
+      
       <section class="saylaniguide bg-primary">
         <div class="container-fluid">
           <div class="guideheading">
             <h1>Saylani Guide</h1>
           </div>
-          <div class="guidecontent">
-
-              <input type="text" placeholder="Enter E-mail Address" min="0" class="saylani-input" style="text-align: left;">
-              <div class="saylanibutton">
-                <button class="subscribe"><span> <strong>Subscribe </strong></span></button>
-              </div>
+          <div class="guidecontent container">
+            <input
+            type="email"
+            placeholder="Enter E-mail Address"
+            min="0"
+            class="saylani-input"
+            style="text-align: left"
+            />
+            <div class="saylanibutton">
+              <button class="subscribe">
+                <span> <strong>Subscribe </strong></span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
     </div>
-
+  </div>
+    
     <footer>
       <section class="saylani-footer">
-        
+        <div class="container">
+          <div class="footerrow row">
+            <div class="col-sm-12 col-12 col-md-5 col-lg-4 z_index_1">
+              <div class="footer-logo z_index_1">
+                <img
+                  src="./Assets/Footer-logo.png"
+                  alt="saylani-footer-logo"
+                  width="300"
+                />
+              </div>
+              <div class="d-flex socialicons mt-3 z_index_1">
+                <div>
+                  <a
+                    href="https://www.facebook.com/SaylaniWelfareInternationalTrust"
+                    target="_blank"
+                  >
+                    <img src="./Assets/FBFooter.png" alt="Facebook" />
+                  </a>
+                </div>
+                <div class="Twitterimg-container">
+                  <a href="https://twitter.com/OfficialSwit" target="_blank">
+                    <img
+                      src="./Assets/Twitterfooter.png"
+                      alt="Twitter"
+                      class="twitterXimg"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.youtube.com/c/SaylaniWelfareInternationalTrust"
+                    target="_blank"
+                  >
+                    <img src="./Assets/Ytfooter.png" alt="Youtube" />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.facebook.com/SaylaniWelfareInternationalTrust"
+                  >
+                    <button>
+                      <img
+                        src="https://saylaniwelfare.com/static/media/whatsapp.e1279ea040ecac4ee2e1fabc73dbfbf5.svg"
+                        alt="whatsapp"
+                      />
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-12 col-md-2 col-lg-2">
+              <div class="footerlink z_index_1">
+                <div class="footheading">
+                  <h1>About</h1>
+                </div>
+                <div class="footmenu z_index_1">
+                  <ul>
+                    <li> <a href="#">Introduction</a></li>
+                    <li> <a href="#">Chairman Message</a></li>
+                    <li> <a href="#">Annual Report</a></li>
+                    <li> <a href="#">Bank Details</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-12 col-md-2 col-lg-2">
+              <div class="footheading z_index_1">
+                <h1>Explore</h1>
+              </div>
+              <div class="footmenu z_index_1">
+                <ul>
+                  <li> <a href="#">News</a></li>
+                  <li> <a href="#">Media</a></li>
+                  <li> <a href="#">Contact</a></li>
+                  <li> <a href="#">Donations</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-12 col-md-2 col-lg-4">
+              <div class="contactheading">
+                <h1>Contact</h1>
+              </div>
+              <div class="contactmenu z_index_1">
+                <ul>
+                  <li>A-25, Bahadurabad Chowrangi Karachi, Pakistan</li>
+                  <li>UAN: 111-729-526 (+0092-213)4130786-90</li>
+                  <li>CELL: 92-311-1729526</li>
+                  <li>USA NO +1(716)941 7792</li>
+                  <li>UK NO (+44)115 970 6256</li>
+                  <li><a href="https://wa.me/923212044379">For Istikhara Contact
+                  <span class="istakhara"><img src="https://saylaniwelfare.com/static/media/whatsapp.e1279ea040ecac4ee2e1fabc73dbfbf5.svg" alt="whatsapp"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 z_index_1">
+                <div class="footercopyright">
+                  <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1662787571/website-images/finance/acca-logo/acca-approved-trainee-development-gold-logo-dark_dbuqdu.png" alt="copy-wright reserved">
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 z_index_1">
+                <div class="footercopyright">
+                  <span>IP address data powered by <a target="_blank" href="https://ipinfo.io" rel="noreferrer">IPinfo</a></span>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-12 z_index_1">
+                <div class="footercopyright">
+                  <span>Copyright © 2024 by Saylani Welfare Int Trust</span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
       </section>
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  
 </html>

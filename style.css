@@ -53,7 +53,6 @@ html{
 }
 .navbar{
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
     padding-top: 20px;
     flex-wrap: wrap;
@@ -61,9 +60,7 @@ html{
     /* position: fixed; */
     background-color: white;
 }
-.sitelogo{
-    width: 10%;
-}
+
 .sitelogo img{
     max-width: 200px;
 }
@@ -94,8 +91,9 @@ html{
     background-color: #0e6db5;
     color: white;
     outline: none;
-    padding: 10px 25px;
+    padding: 5px 20px;
     border: 1px solid #0e6db5;
+    font-size: 1.5rem;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 
@@ -109,7 +107,8 @@ html{
     background-color: #8bc63d;
     color: white;
     outline: none;
-    padding: 10px 25px;
+    padding: 5px 20px;
+    font-size: 1.5rem;
     margin: 0px 5px;
     border: 1px solid #0e6db5;
     border-radius: 5px;
@@ -122,17 +121,17 @@ html{
 .slider{
     display: flex;
     padding: 20px;
-    width: 100%;
+    flex-wrap: wrap;
 }
 .slidertext{
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .sliderh1{
-    font-size: 2rem;
-    width: 80%;
+    font-size: 3rem;
 }
 .sliderh1 h2{
     padding-top: 20px;
@@ -141,18 +140,19 @@ html{
     font-size: 16px;
     color: rgba(0,0,0,.85);
     margin: 10px;
-    width: 80%;
 }
-.sliderlink{
+.sliderlink button{
+    background-color: transparent;
     font-size: 16px;
     border: 1px solid #565656;
-    width: 21%;
     padding: 8px 16px;
     margin: 10px 0px;
     border-radius: 5px;
+
 }
 .sliderlink a{
     text-decoration: none;
+    color: #000000;
 }
 .colortextgreen{
     color: #8bc63d;
@@ -161,117 +161,108 @@ html{
     color: #0e6db5;
 }
 .sliderimage{
-    width: 50%;
     margin-top: 20px;
     padding: 20px;
 }
+
 .sliderimage img{
     height: 520px;
     object-fit: contain;
     width: 100%;
 }
 .donationbox{
-    background-color: #8bc63d53;
-    width: 97.5%;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 30px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #d9ecbf;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: 20px 0px;
 }
-.donationbox-input{
-    align-items: center;
+.donationbox-inputgroup{
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 20% !important;
-}
- .input{
-    font-feature-settings: "tnum", "tnum";
-    border-collapse: initial;
-    border-spacing: 0;
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, .85);
-    display: table;
-    font-size: 14px;
-    font-variant: tabular-nums;
-    line-height: 1.5715;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    flex-wrap: wrap;
+    height: 100%;
     width: 100%;
- }
-.general{
+    font-size: 1.4rem;
+}
+.donationboxinput{
+    display: inline-block;
+    text-align: start;
+    vertical-align: top;
+}
+.input{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.general,.rupees{
+    color: #ffffff;
     background-color: #424242;
-    border-color: #424242;
+    padding: 10px;
+}
+#donation{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding-left: 10px;
+}
+.general{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    color: #fff;
-    font-size: 12px;    
 }
 .rupees{
-    background-color: #424242;
-    border-color: #424242;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    color: #fff;
-    font-size: 12px;   
 }
 
 .donationbtn{
-    width: 60%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 10px;
-    justify-content: center;
+    gap: 10px;
 }
 .donationboxbtn button{
     background-color: #ffffff;
     color: #000000;
     border: none;
+    border-radius: 5px;
     padding: 15px 20px;
     cursor: pointer;
+    font-size: medium;
+    font-weight: 600;
     transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 1.3rem;
-    margin: 0px 10px;
 }
 .donationboxbtn button:hover{
     background-color: #000000;
     color: #ffffff;
     transform: scale(1.1);
 }
-.donatebtn{
-    width: 20%;
-    margin-top: 10px;
-}
 .donatebtn button{
-    cursor: pointer;
-    background-color: #8bc63d;
+    background-color: #90c541;
     color: #ffffff;
-    font-weight: 700;
-    font-size: 1.3rem;
-    border: none;
-    padding: 15px 30px;
-    align-items: center;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    transform: scale(1.1);
 }
 .donatebtn button:hover{
-    transform: scale(1.3);
-}
-.banner figure{
+    background-color: #90c541;
+    color: #ffffff;
+}.banner figure{
     width: 100%;
     position: relative;
 }
+
 .banner img{
-    width: 99%;
+    width: 100%;
     height: 560px;
     border-radius: 4px;
-    padding-left: 20px;
 }
 .banner button{
     color: #ffffff;
@@ -295,22 +286,19 @@ html{
     width: 100%;
     
 }
-.heading{
-    font-size: 2rem;
-    font-weight: 800;
+.heading h1{
+    font-size: 3rem;
+    font-weight: 700;
     text-align: center;
     color: #000000D9;
-    margin: 0 0 15px;
+    margin:  0 15px;
 }
 .servicerow{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
 }
 .serviceboxgroup{
-    width: 13.66666%;
     background-color: #8bc63d53;
     padding: 20px;
     margin-top: 40px;
@@ -328,24 +316,23 @@ html{
     
 }
 .service_text{
-    width: 100%;
     text-align: center;
-    margin: 5px 10px;
+    margin: 5px;
     color: rgb(45, 42, 33);
 }
 .fundraising{
-    margin-top: 40px;
+    margin: 40px 0px;
     display: flex;
     flex-wrap: wrap;
-    width: 96%;
-    margin: 40px auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 15px;
+
 }
 .fundraisinggroup{
-    width: 31%;
     display: flex;
     position: relative;
     transition: all 0.3s ease-in-out;
+    margin: 10px;
 }
 .fundraisinggroup:hover{
     transform: scale(1.1);
@@ -389,10 +376,10 @@ html{
 }
 .otherprojectsrow{
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
 }
 .otherprojectimage{
-    width: 50%;
+    width: 100%;
     position: relative;
 }
 .otherprojectimage img{
@@ -400,6 +387,7 @@ html{
     height: 100%;   
     border-top-left-radius: 100px;
 }
+
 .upcomingtextbox{
     position: absolute;
     top: 0px;
@@ -407,7 +395,6 @@ html{
     height: 50%;
     background-color: #8bc63d;
     color: #ffffff;
-    font-size: 2.3rem;
     padding: 65px;
     display: flex;
     align-items: center;
@@ -416,6 +403,10 @@ html{
     border-bottom: 1px solid #fff;
     border-top-left-radius: 80px;
 }
+.upcomingtextbox h1{
+    font-size: 1.5rem;
+}
+
 .transparentbox{
     position: absolute;
     top: 0px;
@@ -435,14 +426,19 @@ html{
     border-left: 1px solid #fff;
 }
 .otherprojecttext{
-    width: 50%;
-    padding: 0px 20px;
+    width: 100%;
+    padding: 10px 20px;
 }
 .otherprojectheading{
     color: #000000;
-    font-size: 1.9rem;
+    font-size: 3rem;
     font-weight: 300px;
     width: 40%;
+}
+.upcomingprojectsmaindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .upcomingprojectitems{
     display: flex !important;
@@ -467,59 +463,15 @@ html{
     font-size: small;
     font-weight: 600;
 }
-
-/* .servicecounter{
-    background-color: #0e6db5;
-    padding: 100px 0px;
-    margin-top: 30px;
-    position: relative;
-    width: 100%;
-}
-.servicecounter::before{
-    content: "";
-    background-image: url(https://www.saylaniwelfare.com/static/media/upcoming_background.a669f19ea2aee3c7e10f.png);
-    position: absolute;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-}
-.servicerow{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.servicecountboxgroup{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-direction: column;
-}
-.servicebox figure{
-    background-color: #ffffff;
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-    padding: 20px;
-}
-.content{
-    text-align: center;
-    color: #ffffff;
-    font-size: medium;
-}
-.content h4{
-    font-size: 3rem;
-} */
 .servicecounter{
     background-color: #0e6db5;
     padding: 100px 0px;
     margin-top: 30px;
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .servicecounter::before{
     content: "";
@@ -531,14 +483,17 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .servicecountboxgroup{
     display: flex;
-    flex-direction: column;
-    width: 20%;
+    
+    min-width: 200px;
     align-items: center;
     justify-content: center;
-    z-index: 99;
+   
 }
 .servicebox figure{
     background-color: #ffffff;
@@ -548,7 +503,7 @@ html{
     border-radius: 60px;
 }
 .servicebox img{
-
+ width: 100%;
     padding: 15px;
 }
 .servicebox .content{
@@ -566,6 +521,10 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.Mediaupdates{
+    display: flex !important;
+    flex-wrap: wrap !important;
 }
 .mediaimg{
     width: 100%;
@@ -621,7 +580,7 @@ html{
 .saylani-input{
     padding: 15px 20px;
     margin-top: 5px;
-    width: 40%;
+    width: 100%;
     color: #ffffff;
     background-color: transparent;
     border: 1px solid #ffffff;
@@ -629,7 +588,7 @@ html{
     border-radius:5px;
 }
 .subscribe{
-    width: 40%;
+    width: 100%;
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid #0e6db5;
@@ -653,5 +612,123 @@ html{
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
     opacity: 0.2;
+}
+.footerrow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-logo{
+    z-index: 10000;
+}
+.socialicons div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+.socialicons div{
+    margin-left: 5px;
+}
+.Twitterimg-container{
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;   
+}
+.twitterXimg{
+
+    filter: invert(100%);
+    height: 24px !important;
+    width: 38px !important;
+    margin-left: 0px !important;
+}
+.socialicons button{
+    background-color: green;
+    border-style: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 20px;
+}
+.socialicons button img{
+    width: 20px;
+}
+.footerlink{
+    height: 100%;
+}
+.footheading h1{
+    z-index: 1000;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding-left: 20px;
+}
+.footmenu li{
+    z-index: 1000;
+    list-style: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 40px;
+}
+.footmenu li a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1000;
+}
+.contactheading h1{
+    z-index: 1000;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding-left: 20px;
+}
+.contactmenu li{
+    z-index: 1000;
+    list-style: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.contactmenu li a{
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+.istakhara img{
+    width: 15px;
+}
+hr{
+    color: #f5f5f5;
+}
+.footercopyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.footercopyright img{
+    width: 200px;
+    z-index: 1000;
+}
+.footercopyright span{
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.footercopyright span a{
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
 }
